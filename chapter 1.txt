@@ -1,0 +1,31 @@
+Chapter 1: Introduction to C++ and Programming
+
+1.0: Overview of C++ and its history
+
+Bjarne Stroustrup developed C++, a high-level, general purpose programming language, in 1979 at Bell Labs. 
+The language was created as an addition to the C programming language, including classes and objects and other object-oriented capabilities. 
+The name of such a  language was modified from "C with Classes" to C++ later.
+
+First utilized in the creation of the Unix operating system, C++ swiftly became well-liked by programmers. 
+With the language's standardization by the International Organization for Standardization (ISO) in 1998, his use has increased dramatically.
+
+C++'s use of object-oriented programming (OOP) concepts, which allow developers to create complex, reusable software components, is one of his defining characteristics.
+
+1.1: Introduction to programming concepts such as algorithms, data structures, and control structures
+
+Programming concepts are the building blocks of computer programming. 
+Algorithms, data structures, and control structures seem to be instances of certain concepts.
+
+Algorithms are accumulations of steps used it to solve a problem. 
+They are used to specify the process for completing an assignment and can be thought of as problem-solving recipes.
+
+Algorithms are a fundamental part of computer programming and are used in a wide range of applications, from simple tasks like sorting a list of numbers to more complex tasks like finding the shortest path between two points on a map.
+
+Data structures are techniques for organizing and storing data in a computer. 
+They are used to represent complex data connections and are crucial for efficient and effective data management. 
+Arrays, linked lists, trees, as well as graphs are examples of commonly used data structures.
+
+Control structures are the foundation of program logic. Conditional statements (if/else), loops (for and while), and branches (switch/case) are all used to control the flow of execution in a program. 
+Control structures are used to implement algorithms and process data that has already been stored in data structures.
+
+

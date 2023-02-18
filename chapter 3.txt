@@ -1,0 +1,59 @@
+Chapter 3: Control Structures
+
+3.0: Conditional statements (if, else, switch)
+
+Conditional statements are used in coding to control the order of execution based on specific criteria. 
+Conditional statements in C++ are classified into three types: if, else, and switch.
+
+1. "if": The if statement is used to execute a block of code if a certain condition is met. For example:
+int x = 5;
+if (x > 0) {
+    std::cout << "x is positive" << std::endl;
+}
+
+2. "if-else": The if-else statement is used to execute one block of code if a certain condition is met and a different block of code if the condition is not met. For example:
+int x = 5;
+if (x > 0) {
+    std::cout << "x is positive" << std::endl;
+} else {
+    std::cout << "x is non-positive" << std::endl;
+}
+
+3. "switch" statement: The switch statement is used to execute different blocks of code based on the value of a single expression. For example:
+int x = 2;
+switch (x) {
+    case 1:
+        std::cout << "x is 1" << std::endl;
+        break;
+    case 2:
+        std::cout << "x is 2" << std::endl;
+        break;
+    default:
+        std::cout << "x is neither 1 nor 2" << std::endl;
+}
+
+Lastly, conditional statements are useful for controlling the flow of execution in a program. The if, else, and switch statements allow you to make conditioned decisions in different ways, allowing you to create more flexible and dynamic code.
+
+3.1: Loops (for, while, do-while)
+
+Loops are used to continuously run a portion of code. C++ we will show you three loop types: for, while, and do-while.
+
+1. "for" : The for loop is used to repeat a block of code a specific number of times. The loop has a counter that is incremented on each iteration. For example:
+for (int i = 0; i < 5; i++) {
+    std::cout << i << std::endl;
+}
+
+2. "while": The while loop is used to repeat a block of code as long as a certain condition is met. For example:
+int i = 0;
+while (i < 5) {
+    std::cout << i << std::endl;
+    i++;
+}
+3. "do-while": The do-while loop is similar to the while loop, but it is guaranteed to execute the loop body at least once. For example:
+int i = 0;
+do {
+    std::cout << i << std::endl;
+    i++;
+} while (i < 5);
+Finally, loops are a valuable tools for repeating some sections of code. 
+The for, while, and do-while loops let you to control the flow of execution in different ways, allowing you to write more efficient and flexible code.

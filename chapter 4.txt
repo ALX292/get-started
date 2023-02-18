@@ -1,0 +1,106 @@
+Chapter 4: Functions
+
+4.0: Defining and calling functions
+
+Functions are code blocks that can be called from anywhere in the program. 
+Functions in C++ are declared with the function keyword and can take input arguments and return a result.
+
+Here you can see some examples of defining and calling a function in C++:
+
+1. Defining the function:
+
+#include <iostream>
+
+int add(int x, int y) {
+    return x + y;
+}
+
+2. Calling the function:
+
+int result = add(3, 4);
+std::cout << "The result is: " << result << std::endl;
+
+The add function in this example accepts two integer inputs, x and y, and returns their total. 
+Three and four are the two parameters passed to the function when it is called, and the result is saved in the result variable.
+
+It is simpler to develop and maintain your code when a large application is divided up into smaller, reusable components using functions. 
+Functions may also make code easier to comprehend and less prone to mistakes by enclosing complicated logic in a single, well-defined unit.
+
+4.1: Pass by value vs pass by reference
+
+When passing an argument to a function in C++, you have the option of passing it by value or by reference.
+
+Pass by value: When you pass an argument by value, the function receives a copy of the parameter. 
+The original parameter is unaffected by any modifications made to it inside the function.
+For instance:
+
+#include <iostream>
+
+void incrementByValue(int x) {
+    x++;
+}
+
+int main() {
+    int num = 5;
+    incrementByValue(num);
+    std::cout << "The value of num is: " << num << std::endl;
+    return 0;
+}
+
+
+In this example, The incrementByValue function accepts an integer parameter x in our case and increments it. 
+The modification to x inside the function, however, has no impact on the initial value of num because the parameter is supplied by value.
+
+2. Pass by reference: When you pass an argument by reference, you don't pass a copy of the argument; instead, you pass a reference to the original argument. The original argument is affected by any modifications made to the parameter inside the function. For instance:
+
+#include <iostream>
+
+void incrementByReference(int &x) {
+    x++;
+}
+
+int main() {
+    int num = 5;
+    incrementByReference(num);
+    std::cout << "The value of num is: " << num << std::endl;
+    return 0;
+}
+
+In this example, The incrementByReference function in this example increments the integer reference parameter x. 
+The change to x inside the function changes the initial value of num because the parameter is supplied by reference.
+
+In conclusion, there are two alternative methods to send parameters to functions in C++: passing by value and passing by reference. 
+When an argument is passed by value, a copy of it is made; modifications performed inside the function have no effect on the copy. 
+When you pass via reference, the function receives a reference to the first argument, and any modifications performed there have an impact on the original parameter.
+
+4.2: Function overloading
+
+In C++, you may construct numerous functions with the same name but different arguments thanks to a concept called function overloading. 
+When you wish to conduct comparable operations on several data types or when you want to offer various implementations of a function for various scenarios, this might be helpful.
+
+Here's an example of function overloading in C++:
+
+#include <iostream>
+
+int add(int x, int y) {
+    return x + y;
+}
+
+double add(double x, double y) {
+    return x + y;
+}
+
+int main() {
+    int result1 = add(3, 4);
+    double result2 = add(3.14, 4.14);
+    std::cout << "The result for ints is: " << result1 << std::endl;
+    std::cout << "The result for doubles is: " << result2 << std::endl;
+    return 0;
+}
+In this example, There are two add functions created in this example. 
+The second method accepts two double parameters and returns their total whereas the first function requires two int inputs. 
+The first implementation is used when the add function is called with int arguments, while the second implementation is used when the add function is used with double parameters.
+
+In conclusion, The ability to specify numerous functions with the same name but distinct arguments is known as function overloading. 
+This can be helpful for managing various data kinds or for offering several function implementations for various scenarios.
+The kinds of the parameters supplied to the function determine which implementation of the function is appropriate.
